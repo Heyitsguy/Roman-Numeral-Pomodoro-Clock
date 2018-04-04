@@ -64,20 +64,11 @@ function decrease(){
 	} else{
 		document.getElementById("mins").innerHTML = convertToRoman(Math.floor(delta/60));
 		document.getElementById("secs").innerHTML = convertToRoman(Math.floor(delta%60*10)/10);
+		document.querySelector(".title").innerHTML = "Pomodoro-" + Math.floor(delta/60) + ":" + Math.floor(delta%60*10)/10;
 	}
 		
 }
 
-// else if(secsLeft.toString().length === 1){
-	// 	document.getElementById("secs").innerHTML = "0" + secsLeft;
-	// 	document.getElementById("mins").innerHTML = minsLeft;
-	// } else if (minsLeft.toString().length === 1){
-	// 	document.getElementById("mins").innerHTML = "0" + minsLeft;
-	// 	document.getElementById("secs").innerHTML = secsLeft;
-	// } else{
-	// 	document.getElementById("mins").innerHTML = minsLeft;
-	// 	document.getElementById("secs").innerHTML = secsLeft;
-	// }
 
 
 
